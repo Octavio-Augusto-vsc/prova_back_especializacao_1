@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "2a0fe27c-c5e3-4eab-a40d-b07580ff918d",
+		"name": "1ªprova-especialisação-bakc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "18811464"
+	},
+	"item": [
+		{
+			"name": "buacar por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8089/movie/1"
+			},
+			"response": []
+		},
+		{
+			"name": "criar Movie ( filme ): porta 9091",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Fuga das Galinhas\",\r\n    \"idGenero\":1,\r\n    \"urlStream\":\"https://www.youtube.com/watch?v=CZq7vkzWySw\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api-movie/movie"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar catalog id mensagem( fei )",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api-catalog/catalog/mensagem/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Gateway usa Catalog buasca id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api-catalog/catalog/1"
+			},
+			"response": []
+		},
+		{
+			"name": "pelo Gateway",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api-movie/movie"
+			},
+			"response": []
+		},
+		{
+			"name": "criar Movie ( filme ): porta 8087",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Fuga das Galinhas\",\r\n    \"idGenero\":1,\r\n    \"urlStream\":\"https://www.youtube.com/watch?v=CZq7vkzWySw\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api-movie/movie"
+			},
+			"response": []
+		},
+		{
+			"name": "Busca Movie ( filme ) por id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api-movie/movie/1"
+			},
+			"response": []
+		},
+		{
+			"name": "buascar todos os Movies ( filmes )",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api-movie/movie/todos"
+			},
+			"response": []
+		},
+		{
+			"name": "criar Catalog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Ação\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8082/api-catalog/catalog"
+			},
+			"response": []
+		},
+		{
+			"name": "buscar genero especifico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api-catalog/catalog/genero/a"
+			},
+			"response": []
+		},
+		{
+			"name": "buascar Movie ( filmes ) por genero.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api-catalog/catalog/movie/a"
+			},
+			"response": []
+		}
+	]
+}

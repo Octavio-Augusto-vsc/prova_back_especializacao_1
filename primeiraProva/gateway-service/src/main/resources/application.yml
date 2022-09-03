@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: gateway-service
+  config:
+    import: optional:configserver:http://localhost:8888/
+  cloud:
+    config:
+      profile: ${profile:dev}
+# as tres linhas de codigos abaixo foram colocadas no Gateway no GitHub
+#   gateway:
+#      default-filters:
+#        - name: LogFilter
+
+
+
+# o Eureka esta sendo puchado de dentro do Arquivo  ( APPLICATION.YML )
+# eureka:
+#  instance:
+#    hostname: localhost
+

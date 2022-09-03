@@ -1,0 +1,4 @@
+Professor eu criei dois arquivos Mivie_Service no GitHub um com o nome maiúsculo e um minúsculo 
+ e deu certo então pode rodar o Movie duas vezes como esta sem problema.
+O banco eu coloquei para criar automaticamente direto do Intellij es funcionando tudo serto.
+Eu estou mandando arquivos do Postman com as Rotas e os Objetos Prontos e so abrir no seu próprio Postman.
